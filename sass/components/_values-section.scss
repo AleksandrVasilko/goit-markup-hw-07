@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 
-.values-thumb {
+.values__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,12 +13,12 @@
   margin-bottom: 30px;
 }
 
-.values-icons {
+.values__icons {
   width: 70px;
   height: 70px;
 }
 
-.values-list .item {
+.values-list .values__item {
   width: 270px;
 }
 
@@ -45,7 +45,7 @@
   margin: -1px;
 }
 
-.values-item {
+.values__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -55,7 +55,7 @@
   margin-bottom: 10px;
 }
 
-.values-discription {
+.values__discription {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
