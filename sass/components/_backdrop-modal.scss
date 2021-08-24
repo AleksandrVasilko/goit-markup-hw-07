@@ -42,6 +42,10 @@
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
+
+  &:hover svg {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-close svg {
@@ -52,10 +56,6 @@
 .form-fild {
   width: 448px;
   margin: 40px auto;
-}
-
-.modal-close button:hover svg {
-  fill: var(--accent-color);
 }
 
 .form-text {
@@ -69,6 +69,11 @@
 
 .form-item {
   position: relative;
+
+  &:hover .form-icon,
+  &:focus .form-icon {
+    fill: var(--accent-color);
+  }
 }
 
 label {
@@ -91,6 +96,11 @@ label {
   padding: 14px;
   padding-left: 40px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .form-textarea {
@@ -137,11 +147,6 @@ label {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-}
-
-.form-item:hover .form-icon,
-.form-item:focus .form-icon {
-  fill: var(--accent-color);
 }
 
 .icon-check {

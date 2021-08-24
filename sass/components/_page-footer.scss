@@ -49,23 +49,23 @@
 
 .page.social-link {
   background-color: rgba(255, 255, 255, 0.1);
-}
 
-.page.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: var(--secondary-text-color);
+  }
 }
 
 .page.social-link svg {
   fill: var(--secondary-text-color);
 }
 
-.social-link:hover svg,
-.social-link:focus svg {
-  fill: var(--secondary-text-color);
-}
-
-.social-link svg {
+.page.social-link svg {
   width: 22px;
   height: 22px;
   fill: var(--social-link-color);
@@ -84,14 +84,4 @@
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
-
-.form-input:hover,
-.form-input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-textarea:hover,
-.form-textarea:focus {
-  border: 1px solid var(--accent-color);
 }

@@ -27,11 +27,21 @@
   overflow: hidden;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
-}
 
-.project__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  & a:hover .project-thumb::before,
+  & a:focus .project-thumb::before {
+    transform: translate(0);
+  }
+
+  & a:hover .portfolio-overlye,
+  & a:focus .portfolio-overlye {
+    transform: translate(0, 0);
+  }
 }
 
 .project__item:nth-last-child(-n + 3) {
@@ -76,14 +86,4 @@
 
 .project-thumb {
   overflow: hidden;
-}
-
-.project__item a:hover .project-thumb::before,
-.project__item a:focus .project-thumb::before {
-  transform: translate(0);
-}
-
-.project__item a:hover .portfolio-overlye,
-.project__item a:focus .portfolio-overlye {
-  transform: translate(0, 0);
 }
