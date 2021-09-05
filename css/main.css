@@ -729,6 +729,10 @@ a:focus {
   margin-left: 10px;
 }
 
+.page.social-link svg {
+  fill: var(--secondary-text-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
